@@ -8,6 +8,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
 	
 	public User findByUsername(String username);
 	
-	public User deleteByUsername(String username);
+	public Iterable<User> deleteByUsername(String username);
 
 }
